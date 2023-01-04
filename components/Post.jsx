@@ -12,7 +12,6 @@ import {
 } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
-import Moment from "react-moment";
 import { db } from "../firebase";
 
 function Post({ id, username, userImg, caption, img }) {
@@ -163,10 +162,6 @@ function Post({ id, username, userImg, caption, img }) {
                 <span className="font-bold">{comment?.data()?.username}</span> :{" "}
                 {comment.data().comment}
               </p>
-
-              <Moment fromNow className="text-xs pr-5">
-                {comment.data().timestamp?.toDate()}
-              </Moment>
             </div>
           ))}
         </div>
