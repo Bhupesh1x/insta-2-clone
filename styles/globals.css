@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navButtons {
+    @apply h-6 w-6 cursor-pointer hover:scale-125 transition-all duration-150 ease-out hidden md:inline-flex;
+  }
+
+  .plusIconButtons {
+    @apply h-6 w-6 cursor-pointer hover:scale-125 transition-all duration-150 ease-out md:inline-flex;
+  }
+
+  .btn {
+    @apply h-6 hover:scale-110 transition-all duration-150 ease-out cursor-pointer object-contain;
+  }
+}
